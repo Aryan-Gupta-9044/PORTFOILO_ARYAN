@@ -1,16 +1,15 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #e8f0fe;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
-.main-header {
-    background: linear-gradient(to right, #00509e, #007acc);
+header {
+    background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -19,27 +18,109 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+h1 {
     margin: 0;
 }
 
+nav {
+    background: #444;
+    color: #fff;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 0 0 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles for DSA and DAA Work section */
+#dsa-daa-work {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#dsa-daa-work .project {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+#dsa-daa-work .project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .about-section {
@@ -128,15 +209,4 @@ nav ul li a:hover {
 
 .contact-section button:hover {
     background-color: #007acc;
-}
-
-footer {
-    background-color: #00509e;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 } 
